@@ -1,0 +1,9 @@
+ln -sf ~/dotfiles/vimrc ~/.vimrc
+
+if ! command -v rg &> /dev/null; then
+  sudo apt-get install -y ripgrep
+fi
+
+if ! command -v fzf &> /dev/null; then
+  sudo apt-get install -y fzf
+fi
