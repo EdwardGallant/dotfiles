@@ -1,4 +1,7 @@
-ln -sf ~/dotfiles/vimrc ~/.vimrc
+cp ~/dotfiles/.vimrc ~/.vimrc
+
+alias eg_nginx='sudo /etc/init.d/nginx restart'
+alias eg_nginx_conf='/etc/nginx/conf.d/nginx.conf'
 
 if ! command -v rg &> /dev/null; then
   sudo apt-get install -y ripgrep
