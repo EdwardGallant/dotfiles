@@ -705,4 +705,7 @@ if !exists("g:surround_no_mappings") || ! g:surround_no_mappings
   endif
 endif
 
+nno \n :e /etc/nginx/conf.d/nginx.conf<CR>
+nno \r :!/etc/init.d/nginx restart<CR>
+
 " vim:set ft=vim sw=2 sts=2 et:
