@@ -1,4 +1,5 @@
 cp ~/dotfiles/.vimrc ~/.vimrc
+cp ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 alias eg_nginx='sudo /etc/init.d/nginx restart'
 alias eg_nginx_conf='/etc/nginx/conf.d/nginx.conf'
