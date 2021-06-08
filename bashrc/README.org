@@ -1,0 +1,12 @@
+#+TITLE: BashRc
+#+STARTUP: hidestars
+#+PROPERTY: header-args :tangle .bashrc
+
+* nginx
+Some commands to make working with the server easier
+
+#+BEGIN_SRC bash
+function nginx {
+    sudo /etc/init.d/nginx $1
+}
+#+END_SRC
