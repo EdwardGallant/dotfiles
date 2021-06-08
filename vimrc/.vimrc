@@ -2,7 +2,11 @@ nnoremap <C-I> <C-I>
 vnoremap <Tab> <Esc>gV
 onoremap <Tab> <Esc>
 inoremap <Tab> <Esc>`^
-nno \q :echo test<CR>
+
+ono <silent> il :<c-u>normal! v^og_<cr>
+ono <silent> al :<c-u>normal! v0o$<cr>
+vno <silent> il :<c-u>normal! v^og_<cr>
+vno <silent> al :<c-u>normal! v0o$<cr>
 
 se background=dark
 
