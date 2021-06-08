@@ -2,6 +2,15 @@
 #+STARTUP: hidestars
 #+PROPERTY: header-args :tangle .bashrc
 
+* dotfiles
+Get the lastest version of my dotfiles and run install
+#+BEGIN_SRC bash
+function reload_dotfiles {
+    ( cd ~/dotfiles && git checkout -b nyaotmp && git branch -D main && git fetch && git checkout main && git branch -D nyaotmp )
+    bash ~/dotfiles/install
+    source ~/.bashrc
+}
+#+END_SRC
 * nginx
 Some commands to make working with the server easier
 
