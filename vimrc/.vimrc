@@ -2021,3 +2021,4 @@ fu! JourneyMode()
 endfu
 
 command! Jor call JourneyMode()
+nno dj :Jor<CR>
