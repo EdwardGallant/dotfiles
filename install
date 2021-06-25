@@ -1,6 +1,7 @@
 cp ~/dotfiles/vimrc/.vimrc ~/.vimrc
 cp ~/dotfiles/.tmux.conf ~/.tmux.conf
 cp ~/dotfiles/bashrc/.bashrc ~/.bashrc
+cp -R ~/dotfiles/vim ~/.vim
 echo "source ~/.bashrc" >> ~/.zshrc
 
 if ! command -v rg &> /dev/null; then
