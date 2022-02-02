@@ -6,13 +6,13 @@ cp -R ~/dotfiles/bin ~/bin
 echo "source ~/.bashrc" >> ~/.zshrc
 
 if ! command -v rg &> /dev/null; then
-  sudo apt-get install -y ripgrep
+  sudo apt-get -o DPkg::Lock::Timeout=60 install -y ripgrep
 fi
 
 if ! command -v fzf &> /dev/null; then
-  sudo apt-get install -y fzf
+  sudo apt-get  -o DPkg::Lock::Timeout=60 install -y fzf
 fi
 
 if ! command -v rsync &> /dev/null; then
-  sudo apt-get install -y rsync
+  sudo apt-get -o DPkg::Lock::Timeout=60 install -y rsync
 fi
